@@ -592,6 +592,37 @@ form button:hover {
         transform: rotate(360deg);
     }  
 }
+.scroll-btn {
+    position: fixed;
+    font-size: xx-large;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin-top: 85vh;
+    margin-left: 95%;
+    border-radius: 50%;
+    box-shadow: 3px 3px 12px rgb(0,0,0,0.6);
+    animation: arrowMove .5s infinite linear;
+    cursor: pointer;
+}
+.scroll-btn h1 {
+    width: 39px;
+    height: 50px;
+}
+@keyframes arrowMove {
+    0% {
+        transform: translateY(0);
+    }  
+    100% {
+        transform: translateY(-10px);
+    }  
+    0% {
+        transform: translateY(0);
+    }  
+}
 
 /*-------------------------responside code---------------------*/
 @media (max-width:1300px) {
@@ -635,6 +666,9 @@ form button:hover {
     .developer:hover,
     .cloud:hover {
     transform: scale(1.1);
+}
+.scroll-btn {
+    margin-left: 93%;
 }
 
 }
@@ -693,6 +727,9 @@ form button:hover {
     }
     .demo-intro {
         width: 85%;
+    }
+    .scroll-btn {
+        margin-left: 90%;
     }
 
 }
@@ -816,6 +853,89 @@ form button:hover {
     li a::after {
         bottom: -7px;
     }
+    .scroll-btn {
+        margin-left: 85%;
+    }
+
+}
+@media (max-width:553px) {
+    nav {
+        padding: 0 25px;
+    }
+    .home {
+        margin-left: 20px;
+    }
+    .profile {
+        margin-left: 7%;
+    }
+    .social-media {
+        margin-left: 8%;
+    }
+    .social-media-footer {
+        margin-left: 30%;
+        column-gap: 0;
+        width: 100%;
+    }
+    .social-media-footer a {
+        width: 30px;
+        margin-right: 0;
+    }
+    .resume-cv{
+        margin-top: 4%;
+    }
+    .code-icon {
+        width:90px;
+    }
+    .code-icon img {
+        width:40px;
+    }
+    .version {
+        width: 100px;
+    }
+    .certif {
+        width:340px;
+        column-gap: 0;
+    }
+    .certif img {
+        width:100px;
+        height: auto;
+    }
+    .certif p {
+        font-size: 16px;
+    }
+    fieldset, textarea, input {
+        width: 300px;
+    }
+    .flag {
+        text-align: center;
+        margin-left: 0;
+    }
+    .flag p {
+        font-size: 14px;
+    }
+    .flag p span {
+        font-size: 15px;
+    }
+    .flag img {
+        width: 25px;
+        height: auto;
+    }
+    .hire-me {
+        width: 65px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    input:hover {
+        width: 302px;
+    }
+    .space2,
+    .space3,
+    .space4 {
+        margin-top: 85px;
+    }
+    li a::after {
+        bottom: -7px;
+    }
 
 }
 @media (max-width:450px) {
@@ -909,6 +1029,9 @@ form button:hover {
     }
     li a::after {
         bottom: -7px;
+    }
+    .scroll-btn {
+        margin-left: 80%;
     }
 
 }
