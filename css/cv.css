@@ -175,7 +175,7 @@ h2 {
 }
 .left-content-2 {
     display: grid;
-    grid-template-rows: 35px 35px 35px 35px 35px 52px 155px 110px 112px 62px 280px 52px;
+    grid-template-rows: 35px 35px 35px 35px 35px 52px 155px 110px 112px 62px 28px 52px;
     width: 39%;
     height: 29.7cm;
     background-color: rgb(34, 110, 110);
@@ -273,7 +273,7 @@ i.fa.fa-google-plus::before {
 }
 .right-content {
     display: grid;
-    grid-template-rows: 70px 52px 220px 52px 110px 52px 550px 80px 280px;
+    grid-template-rows: 85px 52px 215px 52px 110px 52px 550px 80px 280px;
     width: 61%;
     height: 29.7cm;
     background-color: rgb(224, 224, 224);

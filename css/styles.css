@@ -1031,7 +1031,13 @@ form button:hover {
         bottom: -7px;
     }
     .scroll-btn {
+        width: 80%;
+        width:80%;
         margin-left: 80%;
+    }
+    .scroll-btn h1 {
+        width:80%;
+        height:80%;
     }
 
 }
