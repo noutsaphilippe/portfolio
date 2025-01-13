@@ -1,3 +1,4 @@
+@import "./cv.css";
 
 *,
 ::before,
@@ -148,7 +149,6 @@ h2 {
     /*row-gap: 10px;*/
     border-bottom: 10px solid white;
 }
-
 .main-container {
     display: grid;
     width: 21cm;
@@ -175,7 +175,7 @@ h2 {
 }
 .left-content-2 {
     display: grid;
-    grid-template-rows: 35px 35px 35px 35px 35px 52px 155px 110px 112px 62px 28px 52px;
+    grid-template-rows: 35px 35px 35px 35px 35px 52px 155px 110px 112px 62px 280px 52px;
     width: 39%;
     height: 29.7cm;
     background-color: rgb(34, 110, 110);
@@ -295,7 +295,7 @@ i.fa.fa-google-plus::before {
     font-size: 13px;
     color: rgb(71, 70, 70);
 }
-.div-profile{
+.div-profile {
     line-height: 17px;
     color: rgb(71, 70, 70);
 }
@@ -320,87 +320,328 @@ i.fa.fa-google-plus::before {
     line-height: 15px;
     line-height-step: 10px;
 }
-/*-----------------------------------*/
+
 /*-------------------------responside code---------------------*/
-@media (max-width:1300px) {
-    .flag {
-        column-gap: 15px;
+@media (max-width:1017px) {
+    .nav {
+        column-gap: 0;
+        padding: 0 40px;
+        width: 100%;
+        justify-content: center;
     }
     .menu {
-        column-gap: 35px;
+        column-gap: 25px;
+        width: 50%;
+        padding-left: 0;
     }
-    nav {
-        padding: 0 25px;
+    .menu li a {
+        font-size: 120%;
     }
-}
-@media (max-width:990px) {
     .flag {
-        column-gap: 0px;
-    }
-    .menu {
-        column-gap: 3px;
-        width: 300px;
-        margin-right: 20px;
-    }
-    nav {
-        padding: 0 10px;
+        column-gap: 10px;
+        width: 250px;
     }
     .hire-me {
-        width: 110px;
-        font-size: 16px;
+        width: 100px;
     }
 }
+
 @media (max-width:800px) {
+    .nav {
+        column-gap: 0;
+        padding: 0 40px;
+        width: 100%;
+        justify-content: center;
+    }
     .menu {
-        margin-top: 18.5rem;
-        background-color: #f8f8f8;
-        position: absolute;
-        column-gap: 23px;
-        width: 140px;
-        height: 250px;
-        margin-left: -10px;
-        padding-right: -85px;
-        display: none;
-        line-height: 6vh;
+        column-gap: 15px;
+        width: 41%;
+        padding-left: 0;
     }
-    .show-menu {
-        display: block;
-    }
-    .show-bars {
-        display: block;
-        cursor: pointer;
-    }
-    nav {
-        padding: 0 10px;
+    .menu li a {
+        font-size: 100%;
     }
     .flag {
-        margin-left: 60px;
+        column-gap: 10px;
+        width: 210px;
+    }
+    .flag img {
+        width: 30px;
+    }
+    .flag p {
+        font-size: 15px;
     }
     .hire-me {
-        width: 110px;
-        font-size: 16px;
+        width: 90px;
+        font-size: 15px;
+    }
+    .div-profile {
+        height: 700px;
+        width: 300px;
+    }
+    .certif img {
+        height: auto;
+        width: 70px;
+    }
+    .field {
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .meter {
+        font-size: 7px;
+    }
+    h3.area {
+        font-size: 14px;
+    }
+    .experience  {
+        width: 310px;
     }
     .content {
         display: flex;
     }
-    p,h3,h2,h1 {
+    .role p {
+        display: 80%;
+    }
+    .main-container {
+        display: grid;
+        width: 80%;
+        height: 29.7cm;
+        box-shadow: 0px 3px 3px rgb(0,0,0,0.2);
+    }
+    p,h3,h1,h4 {
         font-size: 90%;
+    }
+    h2 {
+        font-size: 97%;
+    }
+    .go  {
+        margin-top: 30px;
+    }
+    .link-port p {
+        font-size: 11px;
+        width: 300px;
+    }
+    .link-port {
+        width: 300px;
+    }
+    .left-titles {
+        width: 170px;
+    }
+    .icons p {
+        font-size: 11px;
+        line-height: 13px;
+        margin-bottom: 0px;
     }
     .left-content {
         margin-left: 10%;
         grid-template-rows: 160px 110px 52px 130px 52px 180px 52px 1fr;
         width: 30%;
+        height: 35cm;
     }
     .left-content-2 {
-        grid-template-rows: 35px 35px 35px 35px 35px 52px 155px 110px 112px 62px 280px 52px;
+        grid-template-rows: 35px 35px 35px 35px 35px 52px 180px 140px 142px 62px 280px 52px;
         width: 30%;
         margin-left: 10%;
+        height: 35cm;
+    }
+    .right-content {
+        grid-template-rows: 85px 52px 315px 62px 110px 52px 650px 80px 280px;
+        width: 61%;
+        height: 35cm;
+    }
+    .intro p {
+        font-size: 17px;
+    }
+    .file {
+        margin-bottom: 20px;
+    }
+    .file a {
+        font-size: 90%;
+    }
+    .experience h4 {
+        font-size: 15px;
+        line-height: 15px;
     }
     .left-row1 img {
-        margin-left: 23px;
+        margin-left: 10px;
+    }
+    .left-row2 h2 {
+        font-size: 12px;
+    }
+    .left-row2 div p {
+        font-size: 14px;
+    }
+    .main-container {
+        height: 35cm;
     }
 }
-@media (max-width:650px) {
+@media (max-width:450px) {
+    .nav {
+        column-gap: 0;
+        padding: 0 20px;
+        width: 100%;
+    }
+    .menu {
+        position: static;
+        column-gap: 5px;
+        width:21%;
+        margin-left: -12vh;
+    }
+    .menu li a {
+        font-size: 70%;
+    }
+    .flag {
+        column-gap: 10px;
+        width: 140px;
+    }
+    .flag img {
+        width: 20px;
+    }
+    .flag p {
+        font-size: 12px;
+    }
+    .hire-me {
+        width: 70px;
+        font-size: 12px;
+    }
+    .div-profile {
+        height: 700px;
+        width: 270px;
+    }
+    .certif img {
+        height: auto;
+        width: 50px;
+    }
+    .certif p {
+        font-size: 8px;
+    }
+    .left-row4 {
+        margin-right: 35px;
+    }
+    .field {
+        font-size: 9px;
+        line-height: 14px;
+    }
+    meter {
+        width: 40px;
+    }
+    .skill {
+        display: flex;
+        justify-content: left;
+    }
+
+    h3.area {
+        font-size: 14px;
+    }
+    .experience  {
+        width: 260px;
+    }
+    .content {
+        display: flex;
+    }
+    .role p {
+        display: 80%;
+    }
+    .main-container {
+        display: grid;
+        width: 80%;
+        height: 29.7cm;
+        box-shadow: 0px 3px 3px rgb(0,0,0,0.2);
+    }
+    p,h3,h1,h4 {
+        font-size: 90%;
+    }
+    h2 {
+        font-size: 97%;
+    }
+    .go  {
+        margin-top: 30px;
+    }
+    .link-port p {
+        font-size: 9px;
+        width: 300px;
+    }
+    .link-port {
+        width: 300px;
+    }
+    .left-titles {
+        width: 120px;
+    }
+    .left-titles h2 {
+       font-size: 10px;
+    }
+    .right-titles {
+        width: 260px;
+    }
+    .icons p,
+    .icons i {
+        font-size: 8px;
+        line-height: 15px;
+        margin-bottom: 0px;
+        margin-right: -20px;
+        margin-left: 3px;
+    }
+    .left-content {
+        margin-left: 5%;
+        grid-template-rows: 160px 110px 52px 130px 52px 180px 52px 1fr;
+        width: 32%;
+        height: 37cm;
+    }
+    .left-content-2 {
+        grid-template-rows: 35px 35px 35px 35px 35px 52px 180px 140px 142px 62px 280px 52px;
+        width: 39%;
+        margin-left: 5%;
+        height: 37cm;
+    }
+    .right-content {
+        grid-template-rows: 85px 42px 340px 52px 110px 52px 650px 120px 280px;
+        width: 320px;
+        height: 37cm;
+    }
+    .intro p {
+        font-size: 15px;
+    }
+    .file {
+        margin-bottom: 20px;
+    }
+    .file a {
+        font-size: 90%;
+    }
+    .experience h4 {
+        font-size: 14px;
+        line-height: 11px;
+        width: 280px;
+    }
+    .left-row1 img {
+        margin-left: 3px;
+        width: 125px;
+    }
+    .left-row7 p {
+        font-size: 10px;
+    }
+    .left-row5  {
+        width: 110px;
+    }
+    .left-row5 p {
+        font-size: 10px;
+    }
+    .left-row5 h3 {
+        font-size: 12px;
+    }
+    .left-row2 h2 {
+        font-size: 10px;
+    }
+    .left-row2 div p {
+        font-size: 11px;
+    }
+    .main-container {
+        height: 37cm;
+    }
+    .education {
+        width: 280px;
+    }
+}
+/*@media (max-width:650px) {
     nav {
         padding: 0 50px;
     }
@@ -443,3 +684,4 @@ i.fa.fa-google-plus::before {
         width: 65%;
     }
 }
+*/

@@ -156,7 +156,7 @@ li a:hover::after {
     }
 }
 .introduce  {
-    margin-right: 5%;
+    margin-right: 10%;
 }
 .introduce h3 {
     font-size: 50px;
@@ -304,6 +304,7 @@ li a:hover::after {
     border-radius: 5px;
     box-shadow: 2px 2px 25px rgb(0,0,0,0.6);
     transition: .3s ease-out;
+    margin-top: 10px;
 }
 .helpdesk:hover,
 .developer:hover,
@@ -602,7 +603,7 @@ form button:hover {
     width: 60px;
     height: 60px;
     margin-top: 85vh;
-    margin-left: 95%;
+    margin-left: 91%;
     border-radius: 50%;
     box-shadow: 3px 3px 12px rgb(0,0,0,0.6);
     animation: arrowMove .5s infinite linear;
@@ -636,7 +637,7 @@ form button:hover {
         font-size: 95%;
     }
     .summary p {
-        font-size: 95%;
+        font-size: 18px;
     }
     .certif {
         font-size: 95%;
@@ -668,16 +669,31 @@ form button:hover {
     transform: scale(1.1);
 }
 .scroll-btn {
-    margin-left: 93%;
+    margin-left: 90%;
 }
 
 }
-@media (max-width:990px) {
+/*-----------------max-width 1100Px---------------------*/
+
+@media (max-width:1100px) {
     .certif {
         grid-template-columns: 120px 105px 105px 1fr;
     }
     .certif p {
         font-size: 18px;
+    }
+    .introduce h3,
+    .introduce h1 {
+        font-size: 37px;
+    }
+    .introduce p span {
+        font-size: 30px;
+    }
+    .introduce {
+        display: grid;
+        grid-template-rows: 50px 50px 50px 50px;
+        margin-right: 0%;
+        width: 100%;
     }
     .portrait img {
         width: 300px;
@@ -729,22 +745,73 @@ form button:hover {
         width: 85%;
     }
     .scroll-btn {
-        margin-left: 90%;
+        margin-left: 88%;
     }
 
 }
-@media (max-width:740px) {
+/*-----------------max-width 900Px---------------------*/
+
+@media (max-width:900px) {
     .certif {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 110px 105px 105px 1fr;
+    }
+    .certif p {
+        font-size: 14px;
+    }
+    .introduce h1 {
+        font-size: 30px;
+    }
+    .introduce {
+        grid-template-rows: 50px 50px 50px 50px;
+    }
+    .portrait img {
+        width: 280px;
+        margin-left: 10%;
+    }
+    .about {
+        height: 1360px;
+    }
+    .home {
+        height: 900px;
+    }
+    .demo {
+        height: 1050px;
+    }
+    .certif img {
+        width: 115px;
+        height: auto;
+    }
+    .menu {
+        column-gap: 15px;
+        width: 300px;
+        margin-right: 20px;
+    }
+    nav {
+        padding: 0 30px;
+    }
+    .scroll-btn {
+        margin-left: 88%;
+    }
+
+}
+/*-----------------max-width 750Px---------------------*/
+
+@media (max-width:750px) {
+    .portrait img {
+        width: 250px;
+        margin-left: 10%;
+    }
+
+}
+@media (max-width:704px) {
+    .certif {
+        grid-template-columns: 130px 125px 125px 130px;
     }
     .certif p {
         font-size: 18px;
     }
     .portrait img {
-        width: 300px;
-    }
-    .mic-id {
-        display: none;
+        width: 260px;
     }
     .menu {
         margin-top: 18.5rem;
@@ -766,31 +833,40 @@ form button:hover {
         cursor: pointer;
     }
     nav {
-        padding: 0 10px;
-    }
-    .flag {
-        margin-left: 60px;
+        column-gap: 90px;
+        width: 100%;
+        justify-content: center;
     }
     .hire-me {
         width: 110px;
         font-size: 16px;
+    }
+    .introduce {
+        margin-left: 25%;
     }
     .introduce span {
         font-size: 30px;
         color: rgb(244, 192, 23);
     }
     .home {
-        height: 1246px;
+        height: 1200px;
     }
     .home-box {
         display: grid;
         height: 100%;
+        margin-left: 10%;
     }
     .profile {
         margin-left: 7%;
+        width: 100%;
+        grid-template-rows: 200px 260px 130px 130px;
     }
     .social-media {
         margin-left: 4%;
+        margin-right: 0;
+    }
+    .footer{
+        width: 121.5%;
     }
     .certif {
         width:400px;
@@ -798,12 +874,21 @@ form button:hover {
     .about {
         height: 1949px;
     }
+    .about-box {
+        margin-left: 10%;
+        height:1949px;
+    }
+    .about-box,
+    .demo-content,
+    .resume-content {
+        margin-left: 10%;
+    }
     .about-body {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 10px;
     }
     .demo {
-        height: 1470px;
+        height: 1500px;  
     }
     .demo-works {
         grid-template-columns: repeat(2,1fr);
@@ -829,13 +914,20 @@ form button:hover {
         font-weight: bold;
     }
     .about-box {
-        grid-template-rows: 300px 743px;
+        grid-template-rows: 200px 743px;
     }
     .task p {
         font-size: 14px;
     }
     .resume-head p {
         font-size: 16px;
+    }
+    .helpdesk,
+    .developer,
+    .cloud {
+        display: grid;
+        grid-template-rows: 190px 400px;
+    height: 470px;
     }
     .helpdesk:hover,
     .developer:hover,
@@ -849,12 +941,13 @@ form button:hover {
     .space3,
     .space4 {
         margin-top: 85px;
+        width: 121.5%;
     }
     li a::after {
         bottom: -7px;
     }
     .scroll-btn {
-        margin-left: 85%;
+        margin-left: 75%;
     }
 
 }
@@ -862,32 +955,81 @@ form button:hover {
     nav {
         padding: 0 25px;
     }
-    .home {
-        margin-left: 20px;
+    .introduce {
+        margin-right: 30%;
+        grid-template-rows: 50px 50px 60px 70px;
     }
     .profile {
-        margin-left: 7%;
+        grid-template-rows: 250px 280px 150px 130px;
+    }
+    .portrait img {
+        margin-left: 0;
+    }
+    .summary {
+        width: 110%;
     }
     .social-media {
-        margin-left: 8%;
+        margin-left: 0;
     }
     .social-media-footer {
-        margin-left: 30%;
+        margin-left: 50%;
         column-gap: 0;
         width: 100%;
     }
     .social-media-footer a {
         width: 30px;
         margin-right: 0;
+        gap:5px;
+    }
+    .about-intro{
+        margin-top: 14%;
+        margin-bottom: 5%;
+    }
+    .about-intro{
+        margin-top: 14%;
+        margin-bottom: 5%;
+    }
+    .about-body{
+        margin-top: 20%;
+    }
+    .helpdesk,
+    .developer,
+    .cloud {
+        height: 550px;
+    }
+    .about {
+        height: 2149px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
     }
     .resume-cv{
         margin-top: 4%;
     }
     .code-icon {
         width:90px;
+        margin-right: 100px;
+        margin-left: 3px;
     }
     .code-icon img {
         width:40px;
+    }
+    .resume-content {
+        height: 900px;
+    }
+    fieldset  {
+        margin-top: 130px;
+    }
+    .resume-head {
+        margin-top: 50px;
+    }
+    .resume-head p{
+        width: 80%;
+        margin-top: 10px;
+    }
+    .contact {
+        margin-top: 180px;
     }
     .version {
         width: 100px;
@@ -903,12 +1045,8 @@ form button:hover {
     .certif p {
         font-size: 16px;
     }
-    fieldset, textarea, input {
+    textarea, input {
         width: 300px;
-    }
-    .flag {
-        text-align: center;
-        margin-left: 0;
     }
     .flag p {
         font-size: 14px;
@@ -923,6 +1061,11 @@ form button:hover {
     .hire-me {
         width: 65px;
         font-size: 12px;
+        font-weight: bold;
+    }
+    .click-here {
+        width: 100px;
+        font-size: 14px;
         font-weight: bold;
     }
     input:hover {
@@ -940,69 +1083,120 @@ form button:hover {
 }
 @media (max-width:450px) {
     nav {
-        padding: 0 25px;
+        justify-content: center;
+        column-gap: 50px;
+        margin: 0;
+    }
+    .mic-id {
+        display: none;
+    }
+    .introduce {
+        grid-template-rows: 50px 50px 50px 60px;
+    }
+    .profile {
+        grid-template-rows: 250px 330px 150px 130px;
     }
     .hire-me {
         width: 80px;
         font-size: 14px;
+    }
+    .introduce h3 {
+        font-size: 30px;
+    }
+    .introduce h1 {
+        font-size: 27px;
     }
     .introduce span {
         font-size: 30px;
         color: rgb(244, 192, 23);
     }
     .home {
-        margin-left: 20px;
+        padding-left: 30px;
     }
-    .profile {
-        margin-left: 7%;
+    .certif p {
+        margin-left: 50px;
+    }
+    .summary {
+        padding-left:15px;
+        margin-right: 5px;
     }
     .social-media {
-        margin-left: 8%;
+        margin-left: 2%;
     }
     .social-media-footer {
         margin-left: 9%;
         column-gap: 0;
         width: 100%;
     }
+    .footer {
+        padding-left: 5vh;
+    }
     .social-media-footer a {
         width: 30px;
         margin-right: 0;
     }
-    .resume-head{
-        width:100%;
+    .resume-content {
+        height: 860px;
     }
-    .resume-head{
-        width:100%;
-        margin-left: 6%;
+    .about {
+        height: 2449px;
     }
-    .code-icon {
-        width:90px;
-        column-gap: 0;
-        margin-left: 0;
+    fieldset  {
+        margin-top: 130px;
     }
-    .code-icon img {
-        width:40px;
+    .resume-head {
+        margin-top: 50px;
+    }
+    .about-intro{
+        grid-template-rows: 60px 350px;
+        margin-top: -100px;
+        width: 330px;
+        margin-left: 30px;
+    }
+    .about-intro p{
+        font-size: 18px;
+    }
+    .about-box{
+        grid-template-rows: 400px 700px;
+    }
+    .contact {
+        margin-top: 180px;
     }
     .version {
         width: 100px;
     }
+    .helpdesk,
+    .developer,
+    .cloud {
+        height: 600px;
+        width: 360px;
+        margin-left: 40px;
+        padding-left: 10px;
+    }
+    .code-icon {
+        width:90px;
+        margin-right: 0px;
+    }
+    .code-icon img {
+        width:40px;
+    }
     .certif {
         width:340px;
         column-gap: 0;
+        margin-left: -3vh;
+        grid-template-columns: 130px 125px 125px;
+
     }
     .certif img {
         width:100px;
         height: auto;
     }
-    .certif p {
-        font-size: 16px;
-    }
-    fieldset, textarea, input {
+    textarea, input {
         width: 300px;
     }
-    .flag {
-        text-align: center;
-        margin-left: 0;
+    .task {
+        width: 190px;
+        padding-top: 10px;
     }
     .flag p {
         font-size: 14px;
@@ -1019,25 +1213,15 @@ form button:hover {
         font-size: 12px;
         font-weight: bold;
     }
-    input:hover {
-        width: 302px;
-    }
-    .space2,
-    .space3,
-    .space4 {
-        margin-top: 85px;
-    }
     li a::after {
         bottom: -7px;
     }
     .scroll-btn {
-        width: 80%;
-        width:80%;
-        margin-left: 80%;
+        margin-left: 70%;
     }
     .scroll-btn h1 {
-        width:80%;
-        height:80%;
+        width:100%;
+        height:100%;
     }
 
 }
