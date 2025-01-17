@@ -156,7 +156,9 @@ li a:hover::after {
     }
 }
 .introduce  {
-    margin-right: 10%;
+    display: grid;
+    grid-template-rows: 60px 60px 65px 70px;
+    width: 100%;
 }
 .introduce h3 {
     font-size: 50px;
@@ -173,7 +175,7 @@ li a:hover::after {
 }
 .profile {
     display: grid;
-    grid-template-rows: 220px 1fr 130px 100px;
+    grid-template-rows: 220px 250px 130px 100px;
     place-items: center;
     align-items: center;
     justify-content: center;
@@ -251,15 +253,16 @@ li a:hover::after {
 }
 /*------------------about section-------------------*/
 .about {
-    height: 828px;
+    height:1650px;
 }
 .about-box {
     display: grid;
     place-items: center;
     align-items: center;
     justify-content: center;
-    grid-template-rows: 200px 543px;
+    grid-template-rows: 200px 700px 700px;
     margin-bottom: 0;
+    padding-top: 10px;
 }
 .about-intro {
     display: grid;
@@ -624,7 +627,98 @@ form button:hover {
         transform: translateY(0);
     }  
 }
+/*------------------about-carousel section-------------------*/
+.about-carousels {
+    display: grid;
+    grid-template-rows: 130px 1fr;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.about-edu {
+    height: 130px;
+    text-align: center;
+    padding-top: 25px;
+}
+.about-edu h1,
+.about-code h1 {
+    font-size: 40px;
+    color: rgb(244, 192, 23);
+}
+.about-edu p {
+    font-size: 17px;
+    margin-top: 6px;
+    font-weight: 600;
+    color: #f8f8f8;
+}
+.about-code {
+    display: grid;
+    grid-template-rows: 50px 100px 205px 125px 90px 110px 50px;
+    width: 98%;
+    height: 100%;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.div-code {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.code-img {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 15px;
+    width: 100%;
+    height: auto;
+}
+.code-img img {
+    width: 180px;
+    height: 180px;
+    object-fit: fill;
+    backdrop-filter:10px;
+    box-shadow: 3px 3px 10px rgb(0,0,0,0.6);
+}
+.about-code h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+.div-cloud {
+    overflow: hidden;
+    width: 98%;
+    height: 100px;
+}
+.cloud-img {
+    display: flex;
+    column-gap: 82px;
+}
+.cloud-img img {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    border-radius: 10px;
+    animation: logoMove 30s infinite linear;
+}
+@keyframes logoMove {
+    0% {
+        transform: translateX(0);
+    }  
+    50% {
+        transform: translateX(-1450px);
+    }  
+    100% {
+        transform: translateX(-2900px);
+    }
+    150% {
+        transform: translateX(0);
+    }   
 
+}
 /*-------------------------responside code---------------------*/
 @media (max-width:1300px) {
     .roles p {
@@ -671,6 +765,35 @@ form button:hover {
 .scroll-btn {
     margin-left: 90%;
 }
+}
+
+@media (max-width:1160px) {
+    .code-img img {
+        width: 150px;
+        height: 150px;
+    }
+    .div-cloud {
+        overflow: auto;
+        width: 98%;
+        height: 100px;
+    }
+    .cloud-img {
+        display: flex;
+        column-gap: 82px;
+    }
+    .cloud-img img {
+        position: relative;
+        width: 100px;
+        height: 90px;
+        border-radius: 10px;
+        animation: logoMove 30s infinite linear;
+    }
+    .about-code {
+        grid-template-rows: 50px 50px 205px 75px 90px 120px;
+    }
+    .about-box {
+        grid-template-rows: 200px 700px 570px;
+    }
 
 }
 /*-----------------max-width 1100Px---------------------*/
@@ -700,7 +823,7 @@ form button:hover {
         margin-left: 10%;
     }
     .about {
-        height: 1246px;
+        height: 2146px;
     }
     .about-body {
         grid-template-columns: repeat(2, 1fr);
@@ -710,7 +833,7 @@ form button:hover {
         width: 85%;
     }
     .demo {
-        height: 943px;
+        height: 1073px;
     }
     .demo-works {
         grid-template-columns: repeat(3,1fr);
@@ -749,9 +872,9 @@ form button:hover {
     }
 
 }
-/*-----------------max-width 900Px---------------------*/
+/*-----------------max-width 980Px---------------------*/
 
-@media (max-width:900px) {
+@media (max-width:980px) {
     .certif {
         grid-template-columns: 110px 105px 105px 1fr;
     }
@@ -768,8 +891,11 @@ form button:hover {
         width: 280px;
         margin-left: 10%;
     }
+    .portrait {
+        margin-top: 40vh;
+    }
     .about {
-        height: 1360px;
+        height: 2046px;
     }
     .home {
         height: 900px;
@@ -792,6 +918,32 @@ form button:hover {
     .scroll-btn {
         margin-left: 88%;
     }
+    .code-img img {
+        width: 110px;
+        height: 110px;
+    }
+    .cloud-img {
+        display: flex;
+        column-gap: 82px;
+    }
+    .cloud-img img {
+        position: relative;
+        width: 80px;
+        height: 70px;
+    }
+    .about-code {
+        grid-template-rows: 50px 45px 155px 75px 90px 90px;
+    }
+    .about-code h3{
+        font-size: 18px;
+    }
+    .about-box {
+        grid-template-rows: 200px 600px 570px;
+    }
+    .profile {
+        grid-template-rows: 200px 340px 130px 130px;
+    }
+        
 
 }
 /*-----------------max-width 750Px---------------------*/
@@ -801,9 +953,33 @@ form button:hover {
         width: 250px;
         margin-left: 10%;
     }
+    .code-img img {
+        width: 80px;
+        height: 80px;
+    }
+    .cloud-img img {
+        position: relative;
+        width: 70px;
+        height: 60px;
+    }
+    .about-code {
+        grid-template-rows: 50px 45px 125px 75px 90px 90px;
+    }
+    .about-code h3{
+        font-size: 18px;
+    }
+    .about-box {
+        grid-template-rows: 200px 600px 570px;
+    }
 
 }
 @media (max-width:704px) {
+    .div-code{
+        width: 690px;
+    }
+    .cloud-img {
+        width: 690px;
+    }
     .certif {
         grid-template-columns: 130px 125px 125px 130px;
     }
@@ -813,17 +989,21 @@ form button:hover {
     .portrait img {
         width: 260px;
     }
+    .portrait  {
+        margin-top: 0;
+    }
     .menu {
-        margin-top: 18.5rem;
+        margin-top: 22.5rem;
         background-color: #f8f8f8;
         position: absolute;
         column-gap: 23px;
-        width: 140px;
-        height: 250px;
-        margin-left: -10px;
+        width: 180px;
+        height: 295px;
+        margin-left: -90.2vh;
         padding-right: -85px;
         display: none;
         line-height: 6vh;
+        text-align: center;
     }
     .show-menu {
         display: block;
@@ -856,6 +1036,9 @@ form button:hover {
         height: 100%;
         margin-left: 10%;
     }
+    .about-intro {
+        width: 80%;
+    }
     .profile {
         margin-left: 7%;
         width: 100%;
@@ -872,16 +1055,15 @@ form button:hover {
         width:400px;
     }
     .about {
-        height: 1949px;
+        height: 2300px;
     }
     .about-box {
-        margin-left: 10%;
         height:1949px;
+        margin-left: 25%;
     }
-    .about-box,
     .demo-content,
     .resume-content {
-        margin-left: 10%;
+        margin-left: 15%;
     }
     .about-body {
         grid-template-columns: repeat(1, 1fr);
@@ -914,7 +1096,7 @@ form button:hover {
         font-weight: bold;
     }
     .about-box {
-        grid-template-rows: 200px 743px;
+        grid-template-rows: 200px 613px 500px;
     }
     .task p {
         font-size: 14px;
@@ -947,11 +1129,37 @@ form button:hover {
         bottom: -7px;
     }
     .scroll-btn {
+        margin-top: 90vh;
         margin-left: 75%;
+    }
+    body a div h1 {
+        width: 15px;
+        height: 20px;
     }
 
 }
 @media (max-width:553px) {
+    .menu {
+        margin-top: 22.5rem;
+        background-color: #f8f8f8;
+        position: absolute;
+        column-gap: 23px;
+        width: 180px;
+        height: 295px;
+        margin-left: -52.2vh;
+        padding-right: -85px;
+        display: none;
+        line-height: 8vh;
+        text-align: center;
+        opacity: 0.9;
+    }
+    .show-menu {
+        display: block;
+    }
+    .show-bars {
+        display: block;
+        cursor: pointer;
+    }
     nav {
         padding: 0 25px;
     }
@@ -995,10 +1203,14 @@ form button:hover {
     .helpdesk,
     .developer,
     .cloud {
-        height: 550px;
+        height: 450px;
+        width: 550px;
+    }
+    .home-box {
+        margin-left: 15%;
     }
     .about {
-        height: 2149px;
+        height: 2369px;
     }
     .footer{
         display: grid;
@@ -1125,7 +1337,8 @@ form button:hover {
     }
     .social-media-footer {
         margin-left: 9%;
-        column-gap: 0;
+        padding-left: 7vh;
+        column-gap: 5px;
         width: 100%;
     }
     .footer {
@@ -1139,7 +1352,7 @@ form button:hover {
         height: 860px;
     }
     .about {
-        height: 2449px;
+        height: 2879px;
     }
     fieldset  {
         margin-top: 130px;
@@ -1148,16 +1361,13 @@ form button:hover {
         margin-top: 50px;
     }
     .about-intro{
-        grid-template-rows: 60px 350px;
+        grid-template-rows: 60px 450px;
         margin-top: -100px;
         width: 330px;
         margin-left: 30px;
     }
     .about-intro p{
         font-size: 18px;
-    }
-    .about-box{
-        grid-template-rows: 400px 700px;
     }
     .contact {
         margin-top: 180px;
@@ -1168,9 +1378,9 @@ form button:hover {
     .helpdesk,
     .developer,
     .cloud {
-        height: 600px;
-        width: 360px;
-        margin-left: 40px;
+        height: 550px;
+        width: 375px;
+        margin-left: 20px;
         padding-left: 10px;
     }
     .code-icon {
@@ -1217,11 +1427,61 @@ form button:hover {
         bottom: -7px;
     }
     .scroll-btn {
-        margin-left: 70%;
+        margin-left: 80%;
+        margin-top: 110vh;
     }
-    .scroll-btn h1 {
-        width:100%;
-        height:100%;
+    .code-img img {
+        width: 60px;
+        height: 60px;
+    }
+    .cloud-img{
+        width: 450px;
+    }
+    .div-cloud,
+    .div-code {
+        width: 450px;
+    }
+    .about-carousels {
+        width: 445px;
+        height: 150px;
+    }
+    .cloud-img img {
+        position: relative;
+        width: 70px;
+        height: 60px;
+    }
+    .about-code {
+        width: 450px;
+        grid-template-rows: 50px 45px 115px 95px 110px 90px;
+    }
+    .about-code h3{
+        font-size: 18px;
+    }
+    .about-body {
+        margin-top: 50vh;
+    }
+    .about-box {
+        grid-template-rows: 330px 450px 770px;
+    }
+    .menu {
+        margin-top: 22.5rem;
+        background-color: #f8f8f8;
+        position: absolute;
+        column-gap: 23px;
+        width: 180px;
+        height: 295px;
+        margin-left: -38.2vh;
+        padding-right: -85px;
+        display: none;
+        line-height: 6vh;
+        text-align: center;
+    }
+    .show-menu {
+        display: block;
+    }
+    .show-bars {
+        display: block;
+        cursor: pointer;
     }
 
 }

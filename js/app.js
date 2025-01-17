@@ -26,14 +26,52 @@ const movement = {
   origin: "top",
   duration: 2000
 };
+const arrive = {
+  distance: "50px",
+  origin: "left",
+  duration: 500
+};
 
 ScrollReveal().reveal('.img1',{
   ...movement,
-  delay: 1000,
+  delay: 500,
   origin: "top"
 });
 ScrollReveal().reveal('.img2',{
   ...movement,
   origin: "top"
+});
+
+
+
+ScrollReveal().reveal('.img3',{
+  ...arrive,
+  delay: 1000
+
+});
+ScrollReveal().reveal('.img4',{
+  ...arrive,
+  delay: 1500
+
+});
+ScrollReveal().reveal('.img5',{
+  ...arrive,
+  delay: 2000
+
+});
+ScrollReveal().reveal('.img6',{
+  ...arrive,
+  delay: 2500
+
+});
+ScrollReveal().reveal('.img7',{
+  ...arrive,
+  delay: 3000
+
+});
+ScrollReveal().reveal('.img8',{
+  ...arrive,
+  delay: 3500
+
 });
 
